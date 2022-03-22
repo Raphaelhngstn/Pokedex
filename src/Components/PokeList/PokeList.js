@@ -88,16 +88,20 @@ const PokeList = () => {
 
     useEffect(() => {        
         getAllPokemons();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     },[]);
 
 
 
     return (
         <>
-            <button onClick={() =>handleSortName()}>trier par nom</button>
-            <button onClick={() =>handleSortId()}>trier par id</button>
-            <button onClick={() =>handleSortTag()}>trier par tag</button>
+          <div className='pokelist-sort'>
+            <button className='pokelist-button' onClick={() =>handleSortName()}>NAME</button>
+            <button className='pokelist-button' onClick={() =>handleSortId()}>NUMBER</button>
+            <button className='pokelist-button' onClick={() =>handleSortTag()}>TYPE</button>
+          </div>
             <ul className="pokelist">
+          
 
             {byId && sortById()}
             {byName && sortByName()}
