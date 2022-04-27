@@ -10,19 +10,20 @@
     &-button{
       cursor: pointer;
       margin: 2rem 1rem 0;
-      width: 15%;
+      min-width: 150px;
       background-color: red;
       border: none;
-      border: 3px solid red;
+      border: 3px solid white;
+      padding: 0.5rem 1rem;
       border-radius: 5px;
       color: white;
       font-weight: 800;
-      font-size: 22px;
+      font-size: 16px;
     }
 
     &-sort {
       margin: auto;
-      width: 80%;
+      width: 100%;
     }
 
 
@@ -63,7 +64,6 @@
         &-button{
           cursor: pointer;
           margin: 1rem 0.5rem 0;
-          width: 60%;
           flex-wrap: wrap;
           background-color: red;
           border: none;

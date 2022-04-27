@@ -116,6 +116,43 @@
     
 }
 
+@media only screen and (max-width: 700px) {
+    .pokemon {
+    text-align: center;
+    width: 50%;
+    height: 190px;
+    margin: 2rem auto;
+    background-color: #3a5da7;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    padding: 0.5rem;    
+    border: 5px solid rgb(0, 0, 88);
+    position: relative;
+    }
+
+    .pokemon-title {
+        height: 20px;
+        position: absolute;
+        bottom: -25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 18px;
+        font-weight: bold;
+        background-color: white;
+        border-radius: 5px;
+        color: black;
+        padding: 1rem 0.5rem;
+        margin: auto;
+        word-wrap: break-all;
+        border: 2px solid black;
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}
+
 .grass {
     background-color: green;
     color: white;
